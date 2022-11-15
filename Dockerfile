@@ -4,7 +4,7 @@ ENV PYTHONUNBUFFERED 1
 
 WORKDIR /code
 
-COPY Pipfile.lock /code/
+COPY Pipfile Pipfile.lock /code/
 RUN pip install pipenv && pipenv install --system 
 
- COPY . /code/  
+COPY . /code/  
